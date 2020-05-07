@@ -1,11 +1,10 @@
-package dev.biomfire.homeserver.utils.OnlineAPIWrappers.MALWrapper;
+package dev.biomfire.homeserver.anime.OnlineAPIWrappers.MALWrapper;
 
 import com.github.doomsdayrs.jikan4java.core.Connector;
 import com.github.doomsdayrs.jikan4java.core.search.animemanga.AnimeSearch;
 import com.github.doomsdayrs.jikan4java.types.main.anime.animePage.AnimePageAnime;
-import dev.biomfire.homeserver.model.Anime;
-import dev.biomfire.homeserver.utils.OnlineAPIWrappers.IOnlineAnimeAPI;
-import org.springframework.context.annotation.Bean;
+import dev.biomfire.homeserver.anime.model.Anime;
+import dev.biomfire.homeserver.anime.OnlineAPIWrappers.IOnlineAnimeAPI;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

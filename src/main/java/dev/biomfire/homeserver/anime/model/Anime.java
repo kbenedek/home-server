@@ -1,4 +1,4 @@
-package dev.biomfire.homeserver.model;
+package dev.biomfire.homeserver.anime.model;
 
 
 import lombok.AllArgsConstructor;

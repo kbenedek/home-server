@@ -1,8 +1,8 @@
-package dev.biomfire.homeserver.WebCrawlers.NyaaCrawler;
+package dev.biomfire.homeserver.anime.WebCrawlers.NyaaCrawler;
 
-import dev.biomfire.homeserver.WebCrawlers.Torrent;
-import dev.biomfire.homeserver.WebCrawlers.TorrentCrawler;
-import dev.biomfire.homeserver.WebCrawlers.TorrentResults;
+import dev.biomfire.homeserver.anime.WebCrawlers.Torrent;
+import dev.biomfire.homeserver.anime.WebCrawlers.TorrentCrawler;
+import dev.biomfire.homeserver.anime.WebCrawlers.TorrentResults;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -11,8 +11,6 @@ import org.jsoup.select.Elements;
 
 import javax.validation.constraints.NotNull;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 

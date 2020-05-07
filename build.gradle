@@ -29,14 +29,18 @@ dependencies {
     //Web Crawler
     compile 'org.jsoup:jsoup:1.13.1'
     //Torrent
-    compile 'org.libtorrent4j:libtorrent4j:v1.2.3.0'
+    compile 'org.libtorrent4j:libtorrent4j:1.2.3.0'
+    compile 'org.libtorrent4j:libtorrent4j-linux:1.2.3.0'
     //Lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.webjars:bootstrap:4.4.1-1'
     //Spring
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     implementation 'org.springframework.boot:spring-boot-starter-hateoas'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    compile 'org.springframework.boot:spring-boot-starter-freemarker'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'

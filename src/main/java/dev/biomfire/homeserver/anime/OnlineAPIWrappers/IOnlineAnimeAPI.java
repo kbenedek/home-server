@@ -1,7 +1,6 @@
-package dev.biomfire.homeserver.utils.OnlineAPIWrappers;
+package dev.biomfire.homeserver.anime.OnlineAPIWrappers;
 
-import dev.biomfire.homeserver.model.Anime;
-import org.springframework.context.annotation.Bean;
+import dev.biomfire.homeserver.anime.model.Anime;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;

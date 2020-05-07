@@ -1,10 +1,8 @@
-package dev.biomfire.homeserver.WebCrawlers;
+package dev.biomfire.homeserver.anime.WebCrawlers;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.net.URL;
 
 @Data
 @AllArgsConstructor

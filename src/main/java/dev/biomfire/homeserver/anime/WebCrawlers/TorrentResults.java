@@ -1,4 +1,4 @@
-package dev.biomfire.homeserver.WebCrawlers;
+package dev.biomfire.homeserver.anime.WebCrawlers;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
