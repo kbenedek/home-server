@@ -24,8 +24,6 @@ repositories {
 }
 
 dependencies {
-    //Myanimelist API
-    implementation 'com.github.Doomsdayrs:Jikan4java:v1.4.2'
     //Web Crawler
     compile 'org.jsoup:jsoup:1.13.1'
     //Torrent

@@ -1,13 +1,11 @@
 package dev.biomfire.homeserver.torrent;
 
-import dev.biomfire.homeserver.Config;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.libtorrent4j.*;
 import org.libtorrent4j.alerts.AddTorrentAlert;
 import org.libtorrent4j.alerts.Alert;
 import org.libtorrent4j.alerts.MetadataReceivedAlert;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -15,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.nio.file.Paths;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.CountDownLatch;
@@ -25,8 +24,6 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/torrent")
 @AllArgsConstructor
 public class TorrentController {
-    @Autowired
-    private final Config configuration;
 
     @GetMapping("/download")
     public ResponseEntity<Integer> downloadTorrent(@RequestParam(value = "m") String magnetLink) {
@@ -74,7 +71,7 @@ public class TorrentController {
             waitForNodesInDHT(s);
 
             log.info("About to download magnet: " + magnetLink);
-            s.download(magnetLink, configuration.getDataPath().toFile());
+            s.download(magnetLink, Paths.get("/home/biomfire/Downloads").toFile());
             signal.wait();
             log.info("Session stopped");
             s.stop();
