@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 @Controller
 @Slf4j
-@RequestMapping("/torrent")
+@RequestMapping("/api/torrent")
 @AllArgsConstructor
 public class TorrentController {
 
