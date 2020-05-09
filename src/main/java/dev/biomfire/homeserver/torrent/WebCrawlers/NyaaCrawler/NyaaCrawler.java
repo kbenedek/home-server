@@ -1,8 +1,8 @@
-package dev.biomfire.homeserver.anime.WebCrawlers.NyaaCrawler;
+package dev.biomfire.homeserver.torrent.WebCrawlers.NyaaCrawler;
 
-import dev.biomfire.homeserver.anime.WebCrawlers.Torrent;
-import dev.biomfire.homeserver.anime.WebCrawlers.TorrentCrawler;
-import dev.biomfire.homeserver.anime.WebCrawlers.TorrentResults;
+import dev.biomfire.homeserver.torrent.WebCrawlers.Torrent;
+import dev.biomfire.homeserver.torrent.WebCrawlers.TorrentCrawler;
+import dev.biomfire.homeserver.torrent.WebCrawlers.TorrentResults;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

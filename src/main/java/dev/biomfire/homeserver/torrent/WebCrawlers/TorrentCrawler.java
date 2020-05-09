@@ -1,4 +1,4 @@
-package dev.biomfire.homeserver.anime.WebCrawlers;
+package dev.biomfire.homeserver.torrent.WebCrawlers;
 
 
 public interface TorrentCrawler {
