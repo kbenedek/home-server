@@ -2,12 +2,12 @@ package dev.biomfire.homeserver.torrent.WebCrawlers.NyaaCrawler;
 
 import dev.biomfire.homeserver.torrent.WebCrawlers.Torrent;
 import dev.biomfire.homeserver.torrent.WebCrawlers.TorrentCrawler;
-import dev.biomfire.homeserver.torrent.WebCrawlers.TorrentResults;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
 import java.io.IOException;
@@ -15,12 +15,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@Service
 public class NyaaCrawler implements TorrentCrawler {
 
     @Override
-    public TorrentResults searchAnime(String searchTerm) {
+    public List<Torrent> searchAnime(String searchTerm) {
         try {
-            return new TorrentResults(trySearchAnime(searchTerm));
+            return trySearchAnime(searchTerm);
         } catch (IOException e) {
             throw new RuntimeException();
         }

@@ -1,6 +1,8 @@
 package dev.biomfire.homeserver.torrent.WebCrawlers;
 
 
+import java.util.List;
+
 public interface TorrentCrawler {
-     TorrentResults searchAnime(String searchTerm);
+     List<Torrent> searchAnime(String searchTerm);
 }

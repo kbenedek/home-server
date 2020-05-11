@@ -1,4 +1,4 @@
-package dev.biomfire.homeserver.anime;
+package dev.biomfire.homeserver.anime.data;
 
 
 import dev.biomfire.homeserver.anime.model.Anime;
@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 
-public interface AnimeRepository extends MongoRepository<Anime, String> {
+public interface AnimeRepository extends MongoRepository<Anime, String>, CustomAnimeRepository {
     Anime findByMalID(Integer id);
     Boolean existsByMalID(Integer id);
     Page<Anime> findByTitleContainingOrderByPopularityDesc(String title, Pageable pageable);

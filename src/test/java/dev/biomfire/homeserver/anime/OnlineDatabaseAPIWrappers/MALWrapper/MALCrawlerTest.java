@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class MALCrawlerTest {
-    MALCrawler crawler = new MALCrawler();
+    final private MALCrawler crawler = new MALCrawler();
 
     @Test
     void searchAnime() {
