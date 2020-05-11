@@ -1,0 +1,3 @@
+[submodule "src/main/java/dev/biomfire/homeserver/torrent"]
+	path = src/main/java/dev/biomfire/homeserver/torrent
+	url = https://github.com/kbenedek/homeserverDownloadModule.git
