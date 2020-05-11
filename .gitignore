@@ -31,4 +31,3 @@ out/
 ### VS Code ###
 .vscode/
 /gradle/
-/src/main/java/dev/biomfire/homeserver/torrent/
